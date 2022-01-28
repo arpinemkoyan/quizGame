@@ -127,9 +127,9 @@ export default function Certificate({ isGood, name, score, restart }) {
         <div id="restart" style={styles.restart}>
             <button className="restar" style={styles.restartbtn} onClick={restart}>Play again</button>
             <div style={styles.share}>
-                <TelegramShareButton url={"https://news.am/arm/"} style={{ margin: 2 }}><TelegramIcon size={32} round={true} /></TelegramShareButton>
-                <WhatsappShareButton url={"https://news.am/arm/"} style={{ margin: 2 }}><WhatsappIcon size={32} round={true} /></WhatsappShareButton>
-                <FacebookShareButton url={"https://news.am/arm/"} style={{ margin: 2 }}><FacebookIcon size={32} round={true} /></FacebookShareButton>
+                <TelegramShareButton url={"https://quiz-game-arpinemkoyan.vercel.app/"} style={{ margin: 2 }}><TelegramIcon size={32} round={true} /></TelegramShareButton>
+                <WhatsappShareButton url={"https://quiz-game-arpinemkoyan.vercel.app/"} style={{ margin: 2 }}><WhatsappIcon size={32} round={true} /></WhatsappShareButton>
+                <FacebookShareButton url={"https://quiz-game-arpinemkoyan.vercel.app/"} style={{ margin: 2 }}><FacebookIcon size={32} round={true} /></FacebookShareButton>
             </div>
             <Pdf targetRef={ref} filename="Certificate.pdf" options={pdf_options} >
                 {({ toPdf }) => <button onClick={toPdf} style={styles.download}><DownloadIcon /></button>}
