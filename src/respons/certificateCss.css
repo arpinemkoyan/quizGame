@@ -1,0 +1,11 @@
+@media (max-width:600px){
+    #restart{
+           margin: 61vh 56vw;
+    }
+    h1{
+        font-size: 51px;
+    }
+    p{
+        font-size: 40px;
+    }
+}
