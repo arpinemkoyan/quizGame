@@ -1,6 +1,7 @@
 import questions from "./question"
 import { Button } from "@mui/material"
 import '../respons/gameCss.css'
+
 const styles = {
     image: {
         margin: 20,

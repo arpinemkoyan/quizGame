@@ -3,16 +3,8 @@ import sun from "../images/suns1.svg";
 import Pdf from "react-to-pdf";
 import DownloadIcon from '@mui/icons-material/Download';
 import '../respons/certificateCss.css'
-import {
-    FacebookShareButton,
-    TelegramShareButton,
-    WhatsappShareButton,
-} from "react-share";
-import {
-    FacebookIcon,
-    TelegramIcon,
-    WhatsappIcon,
-} from "react-share";
+import { FacebookShareButton, TelegramShareButton, WhatsappShareButton, } from "react-share";
+import { FacebookIcon, TelegramIcon, WhatsappIcon, } from "react-share";
 
 const styles = {
     cerc: {
@@ -27,12 +19,12 @@ const styles = {
     },
     p: {
         fontFamily: "'Puppies Play', cursive",
-        fontSize: 51,
+        fontSize: 60,
         color: "antiquewhite"
     },
     spam: {
         fontFamily: "'Puppies Play', cursive",
-        fontSize: 51,
+        fontSize: 60,
         color: "antiquewhite",
         borderBottom: "1px solid antiquewhite"
     },
@@ -108,13 +100,13 @@ export default function Certificate({ isGood, name, score, restart }) {
 
     return <div className="cercificat" style={{ position: "relative" }} >
         <div ref={ref} style={styles.page}>
-            <h1 style={styles.cerc}>Cercificat of {isGood ? "Excellence" : " Participation"}</h1>
+            <h1 style={styles.cerc}>Cercificate of {isGood ? "Excellence" : " Participation"}</h1>
             <p style={styles.p}>This cercificate {isGood ? " of excellence" : ""} is given to</p>
             <span style={styles.spam}>{name}</span>
-            <p style={styles.p}> for partisipating in on-line Quiz<br></br> and get a score {score} of 20. </p>
+            <p style={styles.p}> for participating in online Quiz<br /> and get a score {score} out of 20.</p>
             <img src={sun} alt="sun" style={styles.icon1} />
             <div style={styles.footer}>
-                <div style={styles.date}>
+                <div className="date" style={styles.date}>
                     <p>Date</p>
                     <p style={{ borderBottom: "1px solid" }}>{new Date().getDate()}.{(new Date().getMonth() + 1).toString().padStart(2, "0")}.{new Date().getFullYear()}</p>
                 </div>

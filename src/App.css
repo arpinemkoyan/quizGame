@@ -6,3 +6,10 @@
   box-sizing: border-box;
   background-color: #862897;
 }
+
+@media (max-width:600px){
+  .App{
+    width: 100%;
+    padding: 10px;
+  }
+}

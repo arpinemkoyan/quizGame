@@ -5,7 +5,10 @@
     h1{
         font-size: 51px;
     }
-    p{
+    .cercificat p{
         font-size: 40px;
+    }
+    .date p{
+        font-size: 23px ;
     }
 }
