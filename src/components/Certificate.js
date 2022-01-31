@@ -112,7 +112,7 @@ export default function Certificate({ isGood, name, score, restart }) {
                 </div>
                 <div  >
                     <span style={styles.names}>Arpine Mkoyan</span>
-                    <img src={sun} alt="sun" style={{ height: 150, width: 150, marginBottom: 20 }} />
+                    <img src={sun} alt="sun" style={{ height: 150, width: 150, marginBottom: 8 }} />
                 </div>
             </div>
         </div>
